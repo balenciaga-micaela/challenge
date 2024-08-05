@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Segunda página challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="logo">
+    <img src="Logo.png" alt="Imagen logo Alura">
+  </header>
+  <main class="presentacion">
+    <section class="primerSeccion">
+    <textarea class="presentacionTextoUsuarioPrimera" name="textoUsuario" id="tU">Lorem ipsum dolor sit amet consectetur adipiscing elit Orci montes sit et diam risus scelerisque vitae est Tortor maecenas nunc ut laoreet Eget diam mauris quam quisque ut eget fringilla sit elit Libero sodales duis fames id diam feugiat aliquet non egestas
+    </textarea>
+    
+    <p class="especificaciones">Solo letras minúsculas y sin acentos</p>
+    
+    <div class="presentacionBotones">
+      <button onclick="encriptar()" class="botonEncriptar">Encriptar</button>
+      <button onclick="desencriptar()" class="botonDesencriptar">Desencriptar</button>
+    </div>
+  </section>
+  
+  <section class="segundaSeccion">
+    
+      <textarea class="presentacionTextoEncriptadoPrimera" name="textoEncriptado" id="tE">Lorem ipsum dolor sit amet consectetur adipiscing elit Orci montes sit et diam risus scelerisque vitae est Tortor maecenas nunc ut laoreet Eget diam mauris quam quisque ut eget fringilla sit elit Libero sodales duis fames id diam feugiat aliquet non egestas
+      </textarea>
+
+    <div>
+      <button onclick="copiarTexto()" class="botonCopiar">Copiar Texto</button>
+    </div>
+  </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

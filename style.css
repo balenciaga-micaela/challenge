@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+:root{
+  --color-primario: #0A3871;
+  --fuente: "Inter", sans-serif;
+}
+
+body{
+  background: #F3F5FC;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  }
+
+  .logo{
+    display: inline-block;
+    width: 120px;
+    height: 48px;
+    padding: 40px 0px 0px 40px;
+
+  }
+
+  .presentacion{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 1033px;
+ 
+  
+  }
+
+  .primerSeccion{
+    position: relative;
+    width: 67.5%;
+
+  }
+
+  .textoUsuario{
+    position: relative;
+    left: 16.6vw;
+    top: 7.74vh;
+    width: 40.09vw;
+    height: 4.27vh;
+    color: var(--color-primario);
+    border: none;
+    outline: none;
+    font-family: var(--fuente);
+    font-size: 2rem;
+    scrollbar-width: 0;
+    max-height: 550px;
+
+  }
+  
+  .textoUsuario:hover {
+    
+    text-decoration-line: underline;
+    text-decoration-color: cyan; 
+    }
+    
+  textarea::-webkit-scrollbar{
+      width: 0px;
+    }
+  
+  textarea::placeholder{
+      font-family: var(--fuente);
+      font-size: 2rem;
+      color: var(--color-primario);
+     
+    }
+
+  .especificaciones{
+    position: absolute; 
+    left: 16.6vw;
+    top: 65vh;
+    width: 30vw;
+    height: 1.6vh;
+    font-size: 0.75rem;
+  }
+
+  .presentacionBotones{
+    position: absolute;
+    width: 46.9vw;
+    height: 5.98vh;
+    left: 17.2vW;
+    top: 70vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .botonEncriptar{
+    width: 48.23%;
+    height: 100%;
+    background-color: var(--color-primario);
+    border-radius: 24px;
+    color: white;
+    font-size: 1rem;
+    font-family: var(--fuente);
+  }
+  .botonDesencriptar{
+    width: 48.23%;
+    height: 100%;
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    color: var(--color-primario);
+    font-size: 1rem;
+    font-family: var(--fuente);
+  }
+
+  .segundaSeccion{
+    position: relative;
+    width: 32.5%;
+    font-size: 3rem;
+   
+
+  }
+
+  .textoEncriptado{
+    width: 27.7vw;
+    height: 84.13vh;
+    border: none;
+    border-radius: 32px;
+    background-image: url("Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center 25%;
+    padding: 5%;
+    
+  
+  }
+
+  .textoEncriptado:hover , .textos:hover{
+    border: 3px solid;
+    border-color: cyan;
+  }
+
+  .textos{
+    position: absolute;
+    top: 45vh; 
+    gap: 5px;
+    width: 23.36vw;
+    left: 3.94vw;
+    text-align: center;
+    font-family: var(--fuente);
+    color: var(--color-primario);
+  }
+  .texto1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+  }
+
+  .texto2{
+    font-size: 1rem;
+    padding-top: 5%;
+  }
+
+
+.presentacionTextoUsuarioPrimera{
+  position: relative;
+  left: 16.6vw;
+  top: 7.74vh;
+  width: 40.09vw;
+  height: 50vh;
+  color: var(--color-primario);
+  border: none;
+  outline: none;
+  font-family: var(--fuente);
+  font-size: 2rem;
+
+}
+
+.presentacionTextoUsuarioPrimera:hover{
+  text-decoration-line: underline;
+    text-decoration-color: cyan; 
+    
+}
+
+.presentacionTextoEncriptadoPrimera{
+  width: 27.7vw;
+  height: 84.13vh;
+  border: none;
+  border-radius: 32px;
+  padding: 5%;
+  font-family: var(--fuente);
+  font-size: 1.5rem;
+}
+
+.presentacionTextoEncriptadoPrimera:hover{
+  text-decoration-line: underline;
+    text-decoration-color: cyan;
+    border: solid 3px cyan; 
+    
+}
+
+.botonCopiar{
+  position: absolute;
+  top: 80vh;
+  left: 2vw;
+  width: 25vw;
+  height: 5.98vh;
+  background-color: #D8DFE8;
+  border-radius: 24px;
+  color: var(--color-primario);
+  font-size: 1rem;
+  font-family: var(--fuente);
+}
+
+@media (max-width: 768px) {
+  .presentacion{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .primerSeccion{
+    width: auto;
+    height: 67.5vh;
+
+  }
+
+  .textoUsuario{
+    width: 90vw;
+    left: 40px;
+  }
+
+  .especificaciones{
+    position: absolute; 
+    width: 90vw;
+    top: 836px;
+    left: 40px;
+  }
+
+  .presentacionBotones{
+    position: absolute; 
+    width: 90vw;
+    height: 5vh;
+    top: 870px;
+    left: 6vw;
+  }
+
+
+  .segundaSeccion{
+    position: absolute;
+    top: 1001px;
+    width: 100%;
+    height: 32.5vh;
+  }
+
+
+  .textoEncriptado{
+    background-image: none;
+    width: 90vw;
+    
+    margin: 5%;
+    height: 133px;
+
+  }
+  .textos{
+    position: absolute;
+    top: 4vh;
+    gap: 5px;
+    width: 50vw;
+    left: 25vw;
+    text-align: center;
+  }
+
+  .presentacionTextoUsuarioPrimera{
+    width: 90vw;
+    height: 500px;
+    left: 5vw
+  }
+
+  .presentacionTextoEncriptadoPrimera{    
+    width: 90vw;
+    height: 400px;
+
+  }
+  .botonCopiar{
+    width: 80vw;
+    height: 67px;
+    left: 10vw;
+    top: 20vh;
+    
+  }
+}
+
+
+
+@media (max-width: 375px){
+
+  .presentacionTextoEncriptadoPrimera{
+    position: relative;
+    top: 1vh;
+  }
+
+  .presentacionBotones{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 8vh;
+    gap: 1vh;
+  }
+  .botonEncriptar{
+    width: 100%;
+  }
+  .botonDesencriptar{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
