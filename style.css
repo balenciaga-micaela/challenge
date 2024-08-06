@@ -45,7 +45,7 @@ body{
     left: 16.6vw;
     top: 7.74vh;
     width: 40.09vw;
-    height: 4.27vh;
+    height: 4.6vh;
     color: var(--color-primario);
     border: none;
     outline: none;
@@ -139,7 +139,7 @@ body{
 
   .textos{
     position: absolute;
-    top: 45vh; 
+    top: 55vh; 
     gap: 5px;
     width: 23.36vw;
     left: 3.94vw;
